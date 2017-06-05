@@ -19,7 +19,7 @@ package effectivejavabook.chapter1.staticfactorymethod;
 
 /**
  *
- * @author Me
+ * @author TriasFani
  */
 public class Main {
 

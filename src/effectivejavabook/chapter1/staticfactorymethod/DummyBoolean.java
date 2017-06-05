@@ -25,7 +25,7 @@ package effectivejavabook.chapter1.staticfactorymethod;
  * <li>tidak seperti constructor, static factory method dapat dipanggil tanpa membuat objek baru</li>
  * <li>tidak seperti constructor, static factory method dapat return tipe lain selain objek dari class</li>
  * </ol>
- * @author Me
+ * @author TriasFani
  */
 public class DummyBoolean {
 
