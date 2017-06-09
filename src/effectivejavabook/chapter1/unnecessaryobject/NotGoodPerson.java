@@ -22,7 +22,10 @@ import java.util.Date;
 import java.util.TimeZone;
 
 /**
- *
+ * objek Calendar, TimeZone akan berada di JVM dan terus menumpuk
+ * karena berada pada masing-masing thread untuk setiap user pada aplikasi web
+ * hal ini akan membebani heap space pada JVM
+ * 
  * @author Me
  */
 public class NotGoodPerson {

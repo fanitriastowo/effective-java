@@ -22,7 +22,12 @@ import java.util.Date;
 import java.util.TimeZone;
 
 /**
- *
+ * bayangkan apabila class ini diexekusi pada aplikasi web
+ * maka setiap class berada pada thread sendiri-sendiri
+ * JVM akan punya banyak sekali objek yang sebetulnya tidak perlu
+ * gunakan static apabila objek bersifat fungsi, 
+ * bukan data yang seharusnya independent untuk masing-masing thread
+ * 
  * @author Me
  */
 public class ImprovedPerson {

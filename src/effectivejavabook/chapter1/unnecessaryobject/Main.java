@@ -17,6 +17,8 @@
  */
 package effectivejavabook.chapter1.unnecessaryobject;
 
+import java.util.concurrent.ScheduledThreadPoolExecutor;
+
 /**
  *
  * @author Me
@@ -24,6 +26,14 @@ package effectivejavabook.chapter1.unnecessaryobject;
 public class Main {
 
   public static void main(String[] args) {
+    // Slow Program..
+    //Long sum = 0L; exekusi 12 detik
+    long sum = 0L;    // eksekusi 1 detik; sebisa mungkin menggunakan primitive
+    
+    for (long i = 0; i < Integer.MAX_VALUE; i++) {
+      sum += i;
+    }
+    System.out.println(sum);
   }
 
   public static void dontDoThis() {
