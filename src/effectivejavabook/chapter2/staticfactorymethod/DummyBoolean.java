@@ -15,17 +15,26 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
-package effectivejavabook.chapter1.staticfactorymethod;
+package effectivejavabook.chapter2.staticfactorymethod;
 
 /**
- *
+ * Gunakan static method dengan identifier public daripada constructor. KENAPA??
+ * karena :
+ * <ol>
+ * <li>tidak seperti constructor, static factory method punya nama.</li>
+ * <li>tidak seperti constructor, static factory method dapat dipanggil tanpa membuat objek baru</li>
+ * <li>tidak seperti constructor, static factory method dapat return tipe lain selain objek dari class</li>
+ * </ol>
  * @author TriasFani
  */
-public class Main {
+public class DummyBoolean {
 
-  public static void main(String[] args) {
-    System.out.print("Test Static Factory Pattern");
-    System.out.print(" ");
-    System.out.println(DummyBoolean.valueOf(true));
+  /**
+   * method untuk meng-cek sebuah value apakah bertipe boolean atau bukan
+   * @param value tipe boolean
+   * @return boolean hasil TRUE atau FALSE dari sebuah objek
+   */
+  public static Boolean valueOf(Boolean value) {
+    return value ? Boolean.TRUE : Boolean.FALSE;
   }
 }
