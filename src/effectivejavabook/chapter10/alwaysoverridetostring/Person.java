@@ -51,6 +51,11 @@ public class Person {
       this.age = age;
    }
    
+   /**
+    * Returns the String representation of this person
+    * 
+    * @return 
+    */
    @Override
    public String toString() {
       return "Person {" + " id = " + id + ", nama = " + nama + ", age = " + age + '}';
